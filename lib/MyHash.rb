@@ -10,6 +10,11 @@ class MyHash
     @value = value
     @test_hash = {@key => @value}
   end
+  #
+  # define_method(:add) do |key, value|
+  #   @test_hash.store(@key,@value)
+  # end
+  #
 
   define_method(:fetch) do |key|
     @test_hash.fetch(@key)
