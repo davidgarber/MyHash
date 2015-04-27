@@ -14,4 +14,12 @@ class MyHash
   define_method(:fetch) do |key|
     @test_hash.fetch(@key)
   end
+
+  define_method(:length) do
+    counter = 0
+    @test_hash.each_key do
+    counter = counter.+(1)
+    end
+    counter
+  end
 end

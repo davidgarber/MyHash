@@ -8,5 +8,10 @@ describe(MyHash) do
       test_hash.store("kitten", "cute")
       expect(test_hash.fetch("kitten")).to(eq("cute"))
     end
+    it("retrieves number of keys in a hash") do
+      test_hash = MyHash.new()
+      test_hash.store("kitten", "cute")
+      expect(test_hash.length()).to(eq(1))
+    end
   end
 end
